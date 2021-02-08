@@ -26,6 +26,7 @@
     text-align:center;
     cursor:pointer;
     white-space:nowrap;
+    color: white;
 }
 
 .button-hover:hover {
@@ -40,13 +41,14 @@
     white-space:nowrap;
     color: rgb(207, 114, 0);
     background-color: rgb(206, 206, 206);
+    border-radius: 12px;
 }
 
 .center {
     text-align: center;
 }
 
-body {
+.body {
     font-family: "DejaVu Sans Mono", sans-serif;
     background-image: url('images/room-bg-cut.jpg');
     background-repeat: no-repeat;
@@ -63,21 +65,29 @@ body {
 }
 
 .main {
-    text-align: center;
     position: relative;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    color:white;
+    overflow:auto;
+    text-decoration:none;
+    /*box-shadow:2px 8px 4px rgb(177,177,177,0.16);*/
+}
+
+.mainBox {
+    background-color: rgb(0,0,0,0.40);
+    border-radius: 16px;
+    box-shadow:0px 0px 10em rgba(255, 255, 255, 0.70);
     top: 12em;
     width: 50%;
     height: 30vw;
     min-width:400px;
     min-height:225px;
-    color:white;
-    background-color: rgb(0,0,0,0.40);
-    border-radius: 16px;
-    overflow:auto;
-    box-shadow:0px 0px 10em rgba(255, 255, 255, 0.80);
-    /*box-shadow:2px 8px 4px rgb(177,177,177,0.16);*/
+}
+
+::selection {
+    background: #F6B783;
+    color: black;
 }
