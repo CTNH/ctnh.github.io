@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../../default.css">
+
+<body style="font-family: DejaVu Sans Mono, sans-serif;">
+
+    <a href="javascript:history.back()" class="main"><< Previous</a>
+
+    <h1 class="main center">Box Pusher</h1>
+
+    <div class="center">
+        <div id="MAP"></div>
+        <div class="button">
+            <p><button onclick="CtrlUp()">🢁</button></p>
+            <p><pre><button onclick="CtrlLeft()">🢀</button>   <button onclick="CtrlDown()">🢃</button>   <button onclick="CtrlRight()">🢂</button></pre></p>
+        </div>
+        <div id="stats" style="color:white"></div>
+    
+    </div>
+
+    <script src="boxPusher.js"></script>
+</body>
+
+<style>
+    table, th, td {
+        border-collapse: collapse;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    button {
+        color: white;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.10);
+        background-repeat: no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        background-image: none;
+        z-index: 1;
+        border-radius: 12px;
+        touch-action: manipulation;
+    }
+
+</style>
+
+
+</html>
