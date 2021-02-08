@@ -4,27 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="default.css">
+<script src="index.js"></script>
 
 <head>
     <title>Portfolio</title>
     <link rel="shortcut icon" href="images/icon.ico">
 </head>
 
-<body>
-    <div class="title-bar">
+<body class="body">
+    <div id="header" class="title-bar">
         <img src="images/home_white.png" width="24" height="24" class="button" href="#">
-        <a onclick="myFunction()" class="button button-hover">HOME</a>
-        <a onclick="myFunction()" class="button button-hover">WEB GAMES</a>
-        <a onclick="myFunction()" class="button button-hover">PORTFOLIO</a>
-        <a onclick="myFunction()" class="button button-hover">CONTACT</a>
+        <a onclick="titleBar(0)" target="main" class="button button-hover">HOME</a>
+        <a onclick="titleBar(1)" target="main" class="button button-hover">WEB GAMES</a>
+        <a onclick="titleBar(2)" class="button button-hover">PORTFOLIO</a>
+        <a onclick="titleBar(3)" class="button button-hover">CONTACT</a>
     </div>
     
-    <div class="center">
-        <div id="main" class="main center">
-            <h1>Hellow World!</h1>
-        </div>
+    <div id="main" class="main center mainBox">
+        <script>
+            document.getElementById("main").innerHTML='<object type="text/html" data=pages/home.html width="99%" height="99%"></object>';
+        </script>
     </div>
 
 </body>
 
 </html>
+
+<script>
+    function titleBar(temp) {
+        switch (temp){
+            case 0:data="home.html";break;
+            case 1:data="web_games.html";break;
+            case 2:data="portfolio.html";break;
+            case 2:data="contact.html";break;
+        }
+        document.getElementById("main").innerHTML='<object type="text/html" data=pages/'+data+' width="99%" height="99%"></object>';
+    }
+    //document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
