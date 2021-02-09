@@ -85,7 +85,7 @@
     width: 70%;
     height: 32vw;
     min-width:320px;
-    min-height:180px;
+    min-height:320px;
 }
 
 ::selection {
